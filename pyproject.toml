@@ -1,0 +1,78 @@
+[project]
+name = "phenobench"
+version = "0.1.0"
+description = "The official development kit of the PhenoBench dataset (www.phenobench.org)."
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.7"
+
+authors = [
+  {name = "Jens Behley", email = "jens.behley@igg.uni-bonn.de" },
+  {name = "Jan Weyler", email = "jan.weyler@igg.uni-bonn.de" },
+  {name = "Federico Magistri", email = "federico.magistri@uni-bonn.de" },
+  {name = "Matteo Sodano", email = "matteo.sodano@igg.uni-bonn.de" },
+  {name = "Gianmarco Roggiolani", email = "groggiol@uni-bonn.de" },
+  {name = "Elias Marks", email = "elias.marks@uni-bonn.de" },
+  {name = "Yue (Linn) Chong", email = "ychong@uni-bonn.de" },
+]
+
+maintainers = [
+  {name = "Jens Behley", email = "jens.behley@igg.uni-bonn.de" }
+]
+
+
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Operating System :: OS Independent",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3 :: Only",
+]
+
+dependencies = [
+  "numpy",
+  "matplotlib",
+  "Pillow>6.2.1"
+]
+
+[project.optional-dependencies]
+eval = [
+  "torch",
+  "torchvision",
+  "torchmetrics==0.10.3",
+  "numpy",
+  "pyyaml",
+  "tqdm"
+]
+
+[project.scripts]
+phenobench-validator = "phenobench.tools.validator:run"
+phenobench-eval = "phenobench.evaluation.phenobench_eval:run"
+
+[project.urls] 
+"Homepage" = "https://www.phenobench.org"
+"Bug Reports" = "https://github.com/PRBonn/phenobench/issues"
+"Source" = "https://github.com/PRBonn/phenobench"
+
+[build-system]
+requires = ["setuptools>=43.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+# tool configuration
+[tool.yapf]
+based_on_style = "pep8"
+column_limit = "120"
+indent_width = "2"
+
+[tool.isort]
+profile = "black"
+
+[tool.pylint.format]
+max-line-length = "120"
+indent-string = '  '

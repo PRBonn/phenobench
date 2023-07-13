@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+preferred-citation:
+  title: "PhenoBench — A Large Dataset and Benchmarks for Semantic Image Interpretation in the Agricultural Domain"
+  year: "2023"
+  type: article
+  journal: "arXiv"
+  url: https://arxiv.org/pdf/2306.04557.pdf
+  codeurl: https://github.com/PRBonn/phenobench-devkit
+  authors:
+    - family-names: Weyler
+      given-names: Jan
+    - family-names: Magistri
+      given-names: Federico
+    - family-names: Marks
+      given-names: Elias
+    - family-names: Chong
+      given-names: Yue Linn
+    - family-names: Sodano
+      given-names: Matteo
+    - family-names: Roggiolani
+      given-names: Gianmarco
+    - family-names: Chebrolu
+      given-names: Nived
+    - family-names: Stachniss
+      given-names: Cyrill
+    - family-names: Behley
+      given-names: Jens
