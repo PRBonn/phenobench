@@ -16,7 +16,7 @@ For more information on the dataset, please visit [www.phenobench.org](https://w
 1. [Download](https://www.phenobench.org/dataset.html) the dataset.
 2. Install the development kit: `pip install phenobench`.
 3. Explore the data with the [tutorial notebook](phenobench_tutorial.ipynb).
-4. See the [code of our baselines](https://github.com/phenobench-baselines) as a starting point or train your own models.
+4. See the [code of our baselines](https://github.com/PRBonn/phenobench-baselines) as a starting point or train your own models.
 5. See the [FAQ](#frequently-asked-questions) for common questions and troubleshooting.
 
 If you discover a problem or have general questions regarding the dataset, don't hesitate to open an issues. We will try to resolve your issue as quickly as possible.
